@@ -63,6 +63,35 @@
 	display: block;
 }
 
+#experience .tab-meta {
+	color: #767c82;
+	font-style: italic;
+	margin: 0.5em 0 1em 0;
+}
+
+#experience .tab-bullets {
+	margin: 1em 0;
+	padding: 0;
+	list-style: none;
+}
+
+#experience .tab-bullets li {
+	position: relative;
+	padding-left: 1.2em;
+	margin-bottom: 0.75em;
+}
+
+#experience .tab-bullets li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0.6em;
+	width: 6px;
+	height: 6px;
+	background-color: #18bfef;
+	border-radius: 50%;
+}
+
 @media screen and (max-width: 736px) {
 	#experience .tabs-wrapper {
 		flex-direction: column;
