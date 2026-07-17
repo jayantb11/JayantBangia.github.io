@@ -1,0 +1,87 @@
+/* Experience tab selector */
+
+#experience {
+	margin: 0 0 3em 0;
+}
+
+#experience .tabs-wrapper {
+	display: flex;
+	gap: 1.5em;
+	align-items: flex-start;
+}
+
+#experience .tabs-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	flex: 0 0 260px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
+#experience .tab-link {
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	padding: 0.85em 1em;
+	border-left: 3px solid #eeeeee;
+	background-color: #f7f7f7;
+	transition: background-color 0.2s ease, border-left-color 0.2s ease;
+}
+
+#experience .tab-link:hover {
+	background-color: #eeeeee;
+}
+
+#experience .tab-link.active {
+	border-left-color: #18bfef;
+	background-color: #ffffff;
+	box-shadow: 0 0 0 1px #eeeeee;
+}
+
+#experience .tab-role {
+	font-weight: 600;
+	color: #212931;
+}
+
+#experience .tab-company {
+	font-size: 0.85em;
+	color: #767c82;
+}
+
+#experience .tabs-panels {
+	flex: 1;
+	min-width: 0;
+}
+
+#experience .tab-panel {
+	display: none;
+}
+
+#experience .tab-panel.active {
+	display: block;
+}
+
+@media screen and (max-width: 736px) {
+	#experience .tabs-wrapper {
+		flex-direction: column;
+	}
+
+	#experience .tabs-list {
+		flex: 1 1 auto;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	#experience .tab-link {
+		flex: 1 1 auto;
+		border-left: none;
+		border-bottom: 3px solid #eeeeee;
+	}
+
+	#experience .tab-link.active {
+		border-bottom-color: #18bfef;
+	}
+}
